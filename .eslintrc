@@ -1,4 +1,9 @@
 {
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest/globals": true
+    },
     "extends": [
         "airbnb",
         "plugin:prettier/recommended",
@@ -20,7 +25,9 @@
         "react/static-property-placement":      [1, "property assignment"],
         "react-hooks/rules-of-hooks":           "error",
         "react-hooks/exhaustive-deps":          "warn",
-        "react/react-in-jsx-scope":             "off"
+        "react/react-in-jsx-scope":             "off",
+        "import/no-named-as-default":           0,
+        "import/no-named-as-default-member":    0
     },
     "parserOptions": {
         "ecmaFeatures": {
